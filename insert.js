@@ -1,8 +1,8 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('kaijin.db');
+const db = new sqlite3.Database('test2.db');
 
 let sql = `
-insert into kaijin ("name" , "level") values ("ワクチンマン" ,"鬼");
+insert into maker ("name" ) values ("Honda");
 `
 
 db.serialize( () => {
