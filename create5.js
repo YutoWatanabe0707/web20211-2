@@ -2,9 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('monster.db');
 
 let schema = `
-create table race(
+create table ability(
   id integer primary key,
-  race text not null
+  ability text not null
 );
 `
 

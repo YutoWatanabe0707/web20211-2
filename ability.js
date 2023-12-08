@@ -2,17 +2,15 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('monster.db');
 
 let sql = `
-select id ,ability  from ability; 
+insert into ability("ability") values ("無し");
 `
 
 db.serialize( () => {
-  db.all( sql, (error, row) => {
+  db.run( sql, (error, row) => {
     if(error) {
       console.log('Error: ', error );
       return;
     }
-    for( let data of row ) {
-      console.log( data.id + ' : ' + data.ability);
-    }
+    console.log( "データを追加しました" );
   });
 });
