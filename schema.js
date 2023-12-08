@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('kaijin.db');
+const db = new sqlite3.Database('race.db');
 
 let sql = `
 select name,sql from sqlite_master where type='table';

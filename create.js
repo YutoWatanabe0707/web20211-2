@@ -1,10 +1,18 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('test2.db');
+const db = new sqlite3.Database('monster.db');
 
 let schema = `
-create table maker(
+create table monster(
   id integer primary key,
-  name not null
+  name text not null,
+  rarity integer not null,
+  element text not null,
+  race_id integer not null,
+  type text not null,
+  battletype text not null,
+  bumpcombo_id integer not null,
+  strikeshot_id integer not null,
+  ability_id integer not null
 );
 `
 
