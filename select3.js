@@ -2,7 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('monster.db');
 
 let sql = `
-select monster.id, monster.name, monster.rarity, monster.element, race.race,
+select monster.id, monster.name, monster.rarity,
+monster.element, 
+race.race,
 monster.type, monster.battletype,
 bumpcombo.bumpcombo, strikeshot.strikeshot,
 ability.ability from monster 
@@ -22,7 +24,7 @@ db.serialize( () => {
       return;
     }
     for( let data of row ) {
-      console.log( data.id + ' : ' + data.name + ' : ' + data.rarity +' : ' + data.element + ' : ' + data.race + ' : ' + data.type + ' : ' + data.battletype + ' : ' + data.bumpcombo + ' : ' + data.strikeshot + ' : ' + data.ability     );
+      console.log( data.id + ' : ' + data.name + ' : ' + data.rarity + ' : ' + data.element + ' : ' + data.race + ' : ' + data.type + ' : ' + data.battletype + ' : ' + data.bumpcombo + ' : ' + data.strikeshot + ' : ' + data.ability);
     }
   });
 });
