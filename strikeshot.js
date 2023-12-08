@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('monster.db');
 
 let sql = `
-insert into strikeshot(strikeshot") values ("スピードアップ");
+insert into strikeshot(strikeshot") values ("壁に触れる度にパワーがアップする");
 `
 
 db.serialize( () => {
