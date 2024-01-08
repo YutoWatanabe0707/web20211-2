@@ -1,8 +1,8 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('kaijin.db');
+const db = new sqlite3.Database('monster.db');
 
 let sql = `
-delete from kaijin where id=2;
+delete from monster where id=2;
 `
 
 db.serialize( () => {
