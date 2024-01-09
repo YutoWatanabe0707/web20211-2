@@ -1,21 +1,20 @@
-        <!Doctype html>
-        <html>
-        <head>
-        <meta charset="utf-8">
-        <title>Show message</title>
-        </head>
-        <body>
-        <h2>都道府県ごとの人口</h2>
-        <table>
-          <% for( let row of data ) { %>
-            <tr>
-            <td><%= row.id %></td>
-            <td><%= row.都道府県 %></td>
-            <td><%= row.人口 %></td>
-              <a href="/db/:id">リンク</a><br>
-            </tr>
-            <% } %>
-              <a href="/db">idへのリンク</a><br>
-        </table>
-        </body>
-        </html>
+   <!Doctype html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Show message</title>
+    </head>
+    <body>
+    <h2>都道府県ごとの人口</h2>
+    <table>
+      <% for( let row of data ) { %>
+        <tr><td>ID</td><td><%= row.id %></td></tr>
+        <tr><td>名前</td><td><%= row.name %></td></tr>
+        <tr><td>レア度</td><td><%= row.rarity %></td></tr>
+        <tr><td>属性</td><td><%= row.element %></td></tr>
+        <tr><td>種族</td><td><%= row.race_id %></td></tr>
+      <% } %>
+    <a href="/db">idへのリンク</a><br>
+    </table>
+    </body>
+    </html>

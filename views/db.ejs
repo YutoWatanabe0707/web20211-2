@@ -5,12 +5,14 @@
 <title>Show message</title>
 </head>
 <body>
-<h2><%= data[0].都道府県 %>の詳細</h2>
+<h2><%= data[0].name %>の詳細</h2>
 <table>
 <% for( let row of data ) { %>
 <tr><td>ID</td><td><%= row.id %></td></tr>
-<tr><td>人口</td><td><%= row.人口 %></td></tr>
-<tr><td>大学数</td><td><%= row.大学 %></td></tr>
+<tr><td>名前</td><td><%= row.name %></td></tr>
+<tr><td>レア度</td><td><%= row.rarity %></td></tr>
+<tr><td>属性</td><td><%= row.element %></td></tr>
+<tr><td>種族</td><td><%= row.race_id %></td></tr>
 <% } %>
 </table>
 </body>

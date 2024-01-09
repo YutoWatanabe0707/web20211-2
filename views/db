@@ -1,0 +1,7 @@
+
+
+<tr><td>撃種</td><td><%= row.monster.type %></td></tr>
+<tr><td>戦型</td><td><%= row.monster.battletype %></td></tr>
+<tr><td>友情コンボ</td><td><%= row.bumpcombo.bumpcombo %></td></tr>
+<tr><td>ストライクショット</td><td><%= row.strikeshot.strikeshot %></td></tr>
+<tr><td>アビリティ</td><td><%= row.ability.ability %></td></tr>
