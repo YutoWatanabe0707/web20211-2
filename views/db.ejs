@@ -5,20 +5,13 @@
 <title>Show message</title>
 </head>
 <body>
-<h2><%= data[0].name %>の詳細</h2>
+  <h2>詳細</h2>
 <table>
 <% for( let row of data ) { %>
   <tr><td>ID</td><td><%= row.id %></td></tr>
   <tr><td>名前</td><td><%= row.name %></td></tr>
   <tr><td>レア度</td><td><%= row.rarity %></td></tr>
   <tr><td>属性</td><td><%= row.element %></td></tr>
-  <tr><td>種族</td><td><%= row.race %></td></tr>
-  <tr><td>撃種</td><td><%= row.type %></td></tr>
-  <tr><td>戦型</td><td><%= row.battletype %></td></tr>
-  <tr><td>友情コンボ</td><td><%= row.bumpcombo %></td></tr>
-  <tr><td>ストライクショット</td><td><%= row.strikeshot %></td></tr>
-  <tr><td>アビリティ</td><td><%= row.ability %></td></tr>
-  <tr><td>リンク</td><td><a href="/db:id">詳細</a><br> </td></tr>
 <% } %>
 </table>
 </body>

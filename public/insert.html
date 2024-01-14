@@ -7,10 +7,44 @@
 <body>
 <h2>新規データ登録</h2>
 <form action="/insert" method="post">
-<input type="text" name="name">
-<input type="number" name="jinko">
-<input type="number" name="daigaku">
+<label for="pop">ID:</label>
+<input type="number" name="id">
+<label for="pop">名前:</label>
+<input type="text" name="name"><br>
+  <label for="pop">レア度:</label>
+<input type="number" name="rarity">
+  <label for="pop">属性:</label>
+<input type="text" name="element"><br>
+  <label for="pop">種族:</label>
+<input type="number" name="race_id">
+  <label for="pop">撃種:</label>
+<input type="text" name="type"><br>
+  <label for="pop">戦型:</label>
+<input type="text" name="battletype">
+  <label for="pop">友情コンボ:</label>
+<input type="number" name="bumpcombo"><br>
+  <label for="pop">ストライクショット:</label>
+<input type="number" name="strikeshot">
+  <label for="pop">アビリティ:</label>
+<input type="number" name="ability"><br>
 <input type="submit" value="登録">
+
+<h2>入力できるデータの詳細</h2>
+<table border="1">
+<tr><th>番号</th><th>種族</th><th>友情コンボ</th><th>ストライクショット</th><th>アビリティ</th></tr>
+<tr><td>1</td><td>妖精</td><td>スピードアップ</td><td>爆発</td><td>無し</td></tr>
+<tr><td>2</td><td>ドラゴン</td><td>スピードとパワーがアップ</td><td>大爆発</td><td>アンチワープ</td></tr>
+<tr><td>3</td><td>亜人</td><td>ふれた最初の敵を乱打し、ふっとばす</td><td>大々爆発</td><td>アンチワープ＆アンチブロック</td></tr>
+<tr><td>4</td><td>魔族</td><td>ふれた敵にメテオで追い打ち</td><td>貫通ホーミング６</td><td>幻獣キラー</td></tr>
+<tr><td>5</td><td>神</td><td>ふれた最初の敵を乱打し、レーザーで追い打ち</td><td>貫通ホーミング８</td><td>アンチ魔法陣＆幻獣キラー　ゲージ:アンチ重力バリア＆アンチワープ</td></tr>
+<tr><td>6</td><td>魔王</td><td>ふれた最初の敵を乱打し、ふっとばす</td><td>クロスレーザーs</td><td>魔王キラー</td></tr>
+<tr><td>7</td><td>ロボット</td><td>壁にふれる毎にパワーがアップ</td><td>超強乱気弾</td><td>飛行＆魔王キラー</td></tr>
+<tr><td>8</td><td>魔人</td><td>味方を率いて敵へ撃ちこむ</td><td>バーティカルレーザーL</td><td>飛行＆魔封じ</td></tr>
+<tr><td>9</td><td>聖騎士</td><td>貫通タイプになり、スピードアップ</td><td>クロスレーザーL</td><td>アンチダメージウォール</td></tr>
+<tr><td>10</td><td>サムライ</td><td>スピードとパワーがアップ＆一定期間、敵の弾を無効化する</td><td>ワンウェイレーザーEL</td><td>アンチダメージウォール＆アンチ重力バリア</td></tr>
+</table>
+
+  
 </form>
 </body>
 </html>
